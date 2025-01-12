@@ -6,7 +6,7 @@ export async function GET(Astro) {
   const channel = await getChannelInfo(Astro)
   const posts = channel.posts || []
 
-  const pageSize = 100
+  const pageSize = 30
   let count = +posts[0]?.id
 
   const pages = []
